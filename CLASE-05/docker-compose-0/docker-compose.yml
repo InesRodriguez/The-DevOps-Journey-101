@@ -1,0 +1,13 @@
+# docker run --name nginx_web -p 81:80 -e PRUEBA=1234 nginx:apline
+
+version: '3'
+services:
+  web:
+    container_name: nginx_web
+    image: nginx:alpine
+    restart: always
+    environment:
+      - PRUEBA=1234
+    ports:
+      - 81:80
+
