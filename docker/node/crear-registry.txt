@@ -1,0 +1,4 @@
+#copiar en consola
+
+docker tag nginx-web:1.0.1 inesalexa/nginx-web:1.0.1
+docker push inesalexa/nginx-web:1.0.1
